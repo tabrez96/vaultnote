@@ -1,0 +1,26 @@
+[project]
+name = "vaultnote"
+version = "0.1.0"
+description = "Secure, encrypted personal note-taking API"
+authors = [
+    {name = "Tabrez Basha", email = "abtabres@gmail.com"}
+]
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+  "sqlalchemy",
+  "alembic",
+  "python-jose[cryptography]",
+  "passlib[bcrypt]",
+  "python-multipart",
+  "jinja2",
+  "aiofiles",
+  "python-frontmatter",
+  "markdown2",
+  "watchfiles",
+]
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+test = ["pytest", "ruff"]
